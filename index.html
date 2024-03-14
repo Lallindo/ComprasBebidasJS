@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste 3</title>
+</head>
+<body>
+    <form>
+        <div id="inputBebidas">
+            <div id="DivCG">
+                <input oninput="getChecked()" id="CerGar" type="checkbox">
+                <label for="CerGar">Cerveja Garrafa</label>
+                <div id="DivCGb">
+                    <button disabled="true" type="button" onclick="subFromQuant(this)" id="subCG">-</button>
+                    <input type="number" id="quantCG" readonly>
+                    <button disabled="true" type="button" onclick="addToQuant(this)" id="addCG">+</button>
+                </div>
+            </div>
+            <div id="DivCL">
+                <input oninput="getChecked()" id="CerLat" type="checkbox">
+                <label for="CerLat">Cerveja Lata</label>
+                <div id="DivCLb">
+                    <button disabled="true" type="button" onclick="subFromQuant(this)" id="subCL">-</button>
+                    <input type="number" id="quantCL" readonly>
+                    <button disabled="true" type="button" onclick="addToQuant(this)" id="addCL">+</button>
+                </div>
+            </div>
+            <div id="DivCoG">
+                <input oninput="getChecked()" id="CocGar" type="checkbox">
+                <label for="CocGar">Coca Garrafa</label>
+                <div id="DivCoGb">
+                    <button disabled="true" type="button" onclick="subFromQuant(this)" id="subCoG">-</button>
+                    <input type="number" id="quantCoG" readonly>
+                    <button disabled="true" type="button" onclick="addToQuant(this)" id="addCoG">+</button>
+                </div>
+            </div>
+            <div id="DivCoL">
+                <input oninput="getChecked()" id="CocLat" type="checkbox">
+                <label for="CocLat">Coca Lata</label>
+                <div id="DivCoLb">
+                    <button disabled="true" type="button" onclick="subFromQuant(this)" id="subCoL">-</button>
+                    <input type="number" id="quantCoL" readonly>
+                    <button disabled="true" type="button" onclick="addToQuant(this)" id="addCoL">+</button>
+                </div>
+            </div>
+            <div id="DivGG">
+                <input oninput="getChecked()" id="GuaGar" type="checkbox">
+                <label for="GuaGar">Guaraná Garrafa</label>
+                <div id="DivGGb">
+                    <button disabled="true" type="button" onclick="subFromQuant(this)" id="subGG">-</button>
+                    <input type="number" id="quantGG" readonly>
+                    <button disabled="true" type="button" onclick="addToQuant(this)" id="addGG">+</button>
+                </div>
+            </div>
+            <div id="DivGL">
+                <input oninput="getChecked()" id="GuaLat" type="checkbox">
+                <label for="GuaLat">Guaraná Lata</label>
+                <div id="DivGLb">
+                    <button disabled="true" type="button" onclick="subFromQuant(this)" id="subGL">-</button>
+                    <input type="number" id="quantGL" readonly>
+                    <button disabled="true" type="button" onclick="addToQuant(this)" id="addGL">+</button>
+                </div>
+            </div>
+            <button type="button" onclick="sumFinalValue()">Finalizar</button>
+        </div>  
+        <p id="valorFinal">Preço: Nada</p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+* {
+    border: 0px;
+    margin: 0px;
+}
+
+#inputBebidas {
+    display: grid;
+    justify-content: start;
+    width: max-content;
+}
+
+#inputBebidas div {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#inputBebidas div label {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 9px;
+}
